@@ -822,6 +822,46 @@ PrefabInstance:
       propertyPath: InitialModule.startLifetime.scalar
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 142631009347080107, guid: 30658e3549ad74cf097950fcd02d1a16,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0.8039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 142631009347080107, guid: 30658e3549ad74cf097950fcd02d1a16,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 142631009347080107, guid: 30658e3549ad74cf097950fcd02d1a16,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 0.85882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 142631009347080107, guid: 30658e3549ad74cf097950fcd02d1a16,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.b
+      value: 0.654902
+      objectReference: {fileID: 0}
+    - target: {fileID: 142631009347080107, guid: 30658e3549ad74cf097950fcd02d1a16,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.g
+      value: 0.92941177
+      objectReference: {fileID: 0}
+    - target: {fileID: 142631009347080107, guid: 30658e3549ad74cf097950fcd02d1a16,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.r
+      value: 0.18431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 142631009347080107, guid: 30658e3549ad74cf097950fcd02d1a16,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key2.g
+      value: 0.40038538
+      objectReference: {fileID: 0}
+    - target: {fileID: 142631009347080107, guid: 30658e3549ad74cf097950fcd02d1a16,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key2.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30658e3549ad74cf097950fcd02d1a16, type: 3}
 --- !u!1 &500804360
@@ -1510,7 +1550,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b2457c49b26694bd687ceb56d3bc1e69, type: 2}
+      objectReference: {fileID: 2100000, guid: 7a69c32b1f0784dd99a5239c4100817f, type: 2}
     - target: {fileID: 2130133704135322491, guid: de35b34ca32d849c798dd9fbb189b4a9,
         type: 3}
       propertyPath: m_RootOrder
