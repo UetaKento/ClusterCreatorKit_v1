@@ -1,9 +1,10 @@
-Shader "Unlit/UVScroll"
+Shader "Unlit/Dissolve"
 {
     Properties
     {
         //[NoScaleOffset]
         _MainTex ("Texture", 2D) = "white" {}
+        _DissolveTex("DissolveTexture", 2D) = "white" {}
     }
     SubShader
     {
@@ -22,43 +23,25 @@ Shader "Unlit/UVScroll"
             struct appdata
             {
                 float4 vertex : POSITION;
-                float3 uv : TEXCOORD0; // パーティクルの情報がTEXCOORD0.zに入っているのでfloat3。
+                float3 uv : TEXCOORD0;
                 float4 color : COLOR; // パーティクル用の色情報。
             };
 
             struct v2f
             {
                 float4 vertex : SV_POSITION;
-                float2 uv : TEXCOORD0;
+                float3 uv : TEXCOORD0;
                 float4 color : COLOR;
             };
 
             sampler2D _MainTex;
-            float4 _MainTex_ST;
-
-            //UnityのRandomRangeのまんま
-            float randRange(float2 Seed, float Min, float Max)
-            {
-                //返値は0.000...~0.999...の値。
-                float randomno = frac(sin(dot(Seed, float2(12.9898, 78.233))) * 43758.5453);
-                //生成した乱数を使って、MinとMaxの領域で線形補完する。
-                return lerp(Min, Max, randomno);
-            }
-
-            float blockNoise(float2 Seed, float Min, float Max)
-            {
-                float2 floorSeed = floor(Seed);
-                return randRange(floorSeed, Min, Max);
-            }
+            sampler2D _DissolveTex;
 
             v2f vert (appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                //_MainTex_ST.w = v.uv.z * 0.5;
-                o.uv.x = v.uv.x;
-                //o.uv.y = v.uv.y * v.uv.z + _Time.y; // 最初に生まれたものほどUVSCrollが早く、死期が近づくにつれUVSCrollが遅くなる。
-                o.uv.y = v.uv.y + v.uv.z;
+                o.uv = v.uv;
                 o.color = v.color;
                 return o;
             }
@@ -67,6 +50,11 @@ Shader "Unlit/UVScroll"
             {
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
+                fixed4 dissolve = tex2D(_DissolveTex, i.uv);
+                //Dissolve画像の色を白黒(GrayScale)に変える。黒色に近いほど0に近い値をとる。 
+                //dissolve.a = 0.3*dissolve.r + 0.6*dissolve.g + 0.1*dissolve.b;
+                float Threshold = 0.3*dissolve.r + 0.6*dissolve.g + 0.1*dissolve.b;
+                clip(Threshold - i.uv.z);
                 return col * i.color;
             }
             ENDCG

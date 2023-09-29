@@ -17,7 +17,6 @@ Shader "Unlit/UVScroll_Wire"
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #pragma multi_compile_particles
 
             #include "UnityCG.cginc"
 
