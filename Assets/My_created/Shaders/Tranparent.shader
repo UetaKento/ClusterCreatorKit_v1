@@ -1,4 +1,4 @@
-Shader "Unlit/UVScroll"
+Shader "Unlit/Tranparent"
 {
     Properties
     {
