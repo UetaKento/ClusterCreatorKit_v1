@@ -41,7 +41,8 @@ Shader "Unlit/UVScroll"
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv.x = v.uv.x; //o.uv.y = v.uv.y * v.uv.z + _Time.y; // 最初に生まれたものほどUVSCrollが早く、死期が近づくにつれUVSCrollが遅くなる。
-                o.uv.y = v.uv.y + v.uv.z;
+                //o.uv.y = v.uv.y + _Time.x;
+                o.uv.y = v.uv.y + (v.uv.z * 0.83);
                 o.color = v.color;
                 return o;
             }
