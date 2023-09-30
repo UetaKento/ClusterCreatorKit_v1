@@ -2,8 +2,10 @@ Shader "Unlit/UVScroll"
 {
     Properties
     {
-        //[NoScaleOffset]
+        [NoScaleOffset]
         _MainTex ("Texture", 2D) = "white" {}
+        // UVScrollをずらすための係数。
+        _ScrollZurashi("ScrollZurashi", Range(0,1))= 0.83
     }
     SubShader
     {
@@ -22,8 +24,10 @@ Shader "Unlit/UVScroll"
             struct appdata
             {
                 float4 vertex : POSITION;
-                float3 uv : TEXCOORD0; // パーティクルの情報がTEXCOORD0.zに入っているのでfloat3。
-                float4 color : COLOR; // パーティクル用の色情報。
+                // パーティクルの情報がTEXCOORD0.zに入っているのでfloat3。
+                float3 uv : TEXCOORD0;
+                // パーティクルの色情報。
+                float4 color : COLOR;
             };
 
             struct v2f
@@ -34,23 +38,24 @@ Shader "Unlit/UVScroll"
             };
 
             sampler2D _MainTex;
-            float4 _MainTex_ST;
+            half _ScrollZurashi;
 
             v2f vert (appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv.x = v.uv.x; //o.uv.y = v.uv.y * v.uv.z + _Time.y; // 最初に生まれたものほどUVSCrollが早く、死期が近づくにつれUVSCrollが遅くなる。
-                //o.uv.y = v.uv.y + _Time.x;
-                o.uv.y = v.uv.y + (v.uv.z * 0.83);
+                o.uv.x = v.uv.x;
+                // v.uv.zのままだとスクロールが一周して見た目が汚くなるので
+                // _ScrollZurashiで調整。
+                o.uv.y = v.uv.y + (v.uv.z * _ScrollZurashi);
                 o.color = v.color;
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_Target
             {
-                // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
+                // パーティクルの色情報を乗算。
                 return col * i.color;
             }
             ENDCG
