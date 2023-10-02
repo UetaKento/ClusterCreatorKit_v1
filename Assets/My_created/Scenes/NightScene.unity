@@ -5350,7 +5350,7 @@ PrefabInstance:
     - target: {fileID: 6843529440206275111, guid: 604390f4b1c0f48ee81e661daf8a4393,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6843529440206275112, guid: 604390f4b1c0f48ee81e661daf8a4393,
         type: 3}
@@ -5411,7 +5411,8 @@ PrefabInstance:
         type: 3}
       propertyPath: LightsModule.light
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 259527693580013365, guid: 46f02a2733cac423491ac238cebb3889,
+        type: 3}
     - target: {fileID: 6843529440206275113, guid: 604390f4b1c0f48ee81e661daf8a4393,
         type: 3}
       propertyPath: LightsModule.ratio
