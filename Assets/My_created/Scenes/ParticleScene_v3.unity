@@ -586,6 +586,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7407552497001047865, guid: 828b5c890a6ec4ad4bcf5a72d81bf3cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f6aa65f9ff0b44449ef05e2658bb08d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 828b5c890a6ec4ad4bcf5a72d81bf3cb, type: 3}
 --- !u!1001 &391948010
@@ -1561,11 +1566,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2130133704135322489, guid: de35b34ca32d849c798dd9fbb189b4a9,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130133704135322489, guid: de35b34ca32d849c798dd9fbb189b4a9,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130133704135322489, guid: de35b34ca32d849c798dd9fbb189b4a9,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2130133704135322490, guid: de35b34ca32d849c798dd9fbb189b4a9,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7a69c32b1f0784dd99a5239c4100817f, type: 2}
+      objectReference: {fileID: 2100000, guid: 1f6aa65f9ff0b44449ef05e2658bb08d, type: 2}
     - target: {fileID: 2130133704135322491, guid: de35b34ca32d849c798dd9fbb189b4a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -1809,5 +1829,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5030978887992233583, guid: b40e5a2d482c7435f97a3b0d263f3f0f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f6aa65f9ff0b44449ef05e2658bb08d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b40e5a2d482c7435f97a3b0d263f3f0f, type: 3}

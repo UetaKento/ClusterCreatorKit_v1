@@ -9656,7 +9656,7 @@ GameObject:
   - component: {fileID: 4159152580093021541}
   - component: {fileID: 4159152580093021538}
   m_Layer: 0
-  m_Name: Trail_SoftCurve
+  m_Name: 023_Trail_SoftCurve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -9636,7 +9636,7 @@ GameObject:
   - component: {fileID: 1596164780356735128}
   - component: {fileID: 1596164780356735135}
   m_Layer: 0
-  m_Name: Tranparent_PolkaDot
+  m_Name: 019_Tranparent_PolkaDot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
