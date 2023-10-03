@@ -1581,7 +1581,7 @@ PrefabInstance:
     - target: {fileID: 1254730562815940805, guid: 9e6da747e1abd4730b6037205e8670a6,
         type: 3}
       propertyPath: LightsModule.enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1254730562815940805, guid: 9e6da747e1abd4730b6037205e8670a6,
         type: 3}
