@@ -1,0 +1,112 @@
+{
+  "triggers": [
+    {
+      "displayName": "AllDisable",
+      "category": "All",
+      "showConfirmDialog": false,
+      "color": [
+        0.5546875,
+        0.81640625,
+        0.984375
+      ],
+      "state": [
+        {
+          "key": "SizeUp05",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "key": "SizeUp1",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "key": "SizeUp2",
+          "type": "bool",
+          "value": false
+        }
+      ]
+    },
+    {
+      "displayName": "SizeUp05_ON",
+      "category": "SizeUp05_Cube",
+      "showConfirmDialog": false,
+      "color": [
+        0.99609375,
+        0.41015625,
+        0
+      ],
+      "state": [
+        {
+          "key": "SizeUp05",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "key": "SizeUp1",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "key": "SizeUp2",
+          "type": "bool",
+          "value": false
+        }
+      ]
+    },
+    {
+      "displayName": "SizeUp1_ON",
+      "category": "SizeUp1_Cube",
+      "showConfirmDialog": false,
+      "color": [
+        0.984375,
+        0.72265625,
+        0
+      ],
+      "state": [
+        {
+          "key": "SizeUp1",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "key": "SizeUp05",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "key": "SizeUp2",
+          "type": "bool",
+          "value": false
+        }
+      ]
+    },
+    {
+      "displayName": "SizeUp2_ON",
+      "category": "SizeUp2_Cube",
+      "showConfirmDialog": false,
+      "color": [
+        0.48046875,
+        0.859375,
+        0.70703125
+      ],
+      "state": [
+        {
+          "key": "SizeUp2",
+          "type": "bool",
+          "value": true
+        },
+        {
+          "key": "SizeUp05",
+          "type": "bool",
+          "value": false
+        },
+        {
+          "key": "SizeUp1",
+          "type": "bool",
+          "value": false
+        }
+      ]
+    }
+  ]
+}
