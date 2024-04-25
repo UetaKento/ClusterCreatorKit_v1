@@ -23,7 +23,7 @@ AnimatorState:
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 88bbd32c88cf0490093ba52043df1184, type: 2}
   m_Tag: 
-  m_SpeedParameter: SpeedMultiplier
+  m_SpeedParameter: 4BeatSpeedMultiplier
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
@@ -58,13 +58,13 @@ AnimatorController:
   m_Name: ColorCube
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: SpeedMultiplier
+  - m_Name: 4BeatSpeedMultiplier
     m_Type: 1
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: ToExit
+  - m_Name: 4BeatToExit
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -92,7 +92,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: ToExit
+    m_ConditionEvent: 4BeatToExit
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 0}
