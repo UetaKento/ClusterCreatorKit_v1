@@ -22,8 +22,8 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _SliceSpace: 0.535
-    - _uvScaleUp: 2.95
+    - _SliceSpace: 0.588
+    - _uvScaleUp: 3.74
     m_Colors:
     - _StripeColor1: {r: 1, g: 1, b: 1, a: 0}
     - _StripeColor2: {r: 0, g: 0, b: 0, a: 0}
