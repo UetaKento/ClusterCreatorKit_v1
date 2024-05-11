@@ -43,7 +43,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f2894a7365e1c4f419db963c21fdc037, type: 3}
+        m_Texture: {fileID: 2800000, guid: a75c4c58ebbc6449d9960e2d8087a535, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -71,7 +71,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadeTexture:
-        m_Texture: {fileID: 2800000, guid: f2894a7365e1c4f419db963c21fdc037, type: 3}
+        m_Texture: {fileID: 2800000, guid: a75c4c58ebbc6449d9960e2d8087a535, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadingGradeTexture:
@@ -109,7 +109,7 @@ Material:
     - _OutlineCullMode: 1
     - _OutlineLightingMix: 1
     - _OutlineScaledMaxDistance: 1
-    - _OutlineWidth: 0.077
+    - _OutlineWidth: 0.5
     - _OutlineWidthMode: 0
     - _Parallax: 0.02
     - _ReceiveShadowRate: 1
@@ -124,13 +124,13 @@ Material:
     - _SrcBlend: 5
     - _UVSec: 0
     - _UvAnimRotation: 0
-    - _UvAnimScrollX: 0.3
+    - _UvAnimScrollX: 1
     - _UvAnimScrollY: 0
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 0.35294116, g: 1, b: 0.3490196, a: 0.6039216}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RimColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShadeColor: {r: 0.96999997, g: 0.81, b: 0.86, a: 1}
   m_BuildTextureStacks: []
